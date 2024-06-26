@@ -41,3 +41,6 @@ loadProducts();
 loadBtn.onclick = () => {
     loadProducts();
 }
+
+
+let

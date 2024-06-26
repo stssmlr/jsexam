@@ -1,0 +1,52 @@
+.navup li a{
+    color: red;
+    transition: transform 0.2s ease;
+}
+
+.navup li a:hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+.navdown{
+    background-color: black;
+}
+
+.navdown li a{
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.navdown li a:hover{
+    color: red;
+    transform: scale(1.1);
+}
+
+.header-logo-text{
+    font-size: larger;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.help-text{
+    font-size: medium;
+    font-weight: 700;
+    color: black;
+    margin-left: 40px
+}
+
+.searchform{
+    width: 550px;
+    margin-left: 120px;
+}
+
+
+.btn-outline-success{
+    border: 1px solid red;
+    color: red;
+}
+
+.btn-outline-success:hover{
+    background-color: red;
+}
