@@ -1,10 +1,11 @@
 const api = 'https://dummyjson.com/products';
 const list = document.querySelector('#products-list');
 const loadBtn = document.querySelector('#loadBtn');
+// const categoryBtn = document.querySelector('#categoryBtn');
 
 const pagination = {
     skip: 0,
-    limit: 30,
+    limit: 4,
     total: null,
     next() {
         this.skip += this.limit;
@@ -12,9 +13,10 @@ const pagination = {
 }
 
 async function loadProducts() {
-    const response = await fetch(`${api}?skip=${pagination.skip}`); // GET
-    pagination.next();
 
+    const response = await fetch(`${api}?limit=${pagination.limit}&skip=${pagination.skip}`); // GET
+    pagination.next();
+    list.innerHTML = ""
     console.log("Status: ", response.status);
 
     const data = await response.json();
@@ -29,7 +31,7 @@ async function loadProducts() {
                                         <h5 class="card-title">${i.title}</h5>
                                         <p class="card-text">${i.price}$ | ${i.category}</p>
                                         <a href="#" class="btn btn-success">Buy</a>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        <a href="#" id="addCart" class="btn btn-primary">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>`
@@ -43,4 +45,17 @@ loadBtn.onclick = () => {
 }
 
 
-let
+// ----------------------- CATEGORIES -----------------------
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const items = document.querySelectorAll('.category-link');
+
+    items.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            const category = item.textContent.trim().toLowerCase().replace(/ /g, '-');
+            window.location.href = `products.html?category=${category}`;
+        });
+    });
+});

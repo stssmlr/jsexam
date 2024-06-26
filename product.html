@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- ----------------------- NAVBAR ----------------------- -->
+        <ul class="nav justify-content-center navup">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pay-and-del.html">Payment And Delivery |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="brands.html">Brands |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">SALE (Soon) |</a>
+            </li>
+          </ul>
+        </div>
+        <!-- ----------------------- HEADER ----------------------- -->
+      
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="img/store-logo.png" class="logo-img" alt="Logo" width="150" height="120" class="d-inline-block align-text-top">
+              </a>
+              
+              <!-- <a class="header-logo-text">MyStore |<br>Buy everything |</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 searchform" type="search" placeholder="Enter your willing..." aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <img src="img/phone.png" class="phone-logo" alt="" srcset="">
+                <a href="contact.html" class="help-text">Need some help?<br>Click here!</a>
+                
+                <a href="cart.html" class="cart-button"><img src="img/cart-logo.png" class="cart-logo" alt="" srcset=""></a>
+              </div>
+            </div>
+          </nav>
+    
+<!-- ----------------------- BANNER ----------------------- -->
+
+<div class="container">
+    <div id="product-details" class="my-4"></div>
+</div>
+
+<!-- ----------------------- FOOTER ----------------------- --> 
+
+<footer class="footer-bs">
+    <div class="row">
+    
+    <div class="col-md-3 footer-brand animated fadeInLeft">
+        <h2>MyStore</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatum ducimus placeat minima consequuntur molestiae eius nulla exercitationem sequi optio quia eveniet id libero suscipit, consectetur aspernatur quaerat dolores cumque.</p>
+        <p>© 2024 MyStore</p>
+    </div>
+        
+    <div class="col-md-4 footer-nav animated fadeInUp">
+    <h4>Menu</h4>
+    <div class="col-md-6">
+    <ul class="pages">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Brands</a></li>
+        <li><a href="#">Payment and Delivery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    <div class="col-md-6">
+        </div>  
+    </div>
+    <div class="col-md-2 footer-social animated fadeInDown">
+    <h4>Social Networks</h4>
+        <ul>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        </ul>
+        </div>
+        
+        <div class="col-md-3 footer-ns animated fadeInRight">
+        <h4>News Sender</h4>
+        <p>Subscribe on uor news to not miss new collection</p>
+        <p>
+        <div class="input-group">
+        <input type="text" class="form-control" placeholder="Введите email...">
+        <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+        </span>
+        </div>
+        </p>
+        </div>
+        </div>
+    </footer>
+    <script src="js/product.js"></script>
+</body>
+</html>
