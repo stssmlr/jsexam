@@ -47,8 +47,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             
-            <form class="d-flex" role="search">
-              <input class="form-control me-2 searchform" type="search" placeholder="Enter your willing..." aria-label="Search">
+            <form class="d-flex" role="search" id="searchForm">
+              <input class="form-control me-2 searchform" type="search" placeholder="Enter your willing..." aria-label="Search" id="searchInput">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <img src="img/phone.png" class="phone-logo" alt="" srcset="">
@@ -111,7 +111,7 @@
       <div class="container">
         <h1 class="my-3 text-center">Hot Sale!</h1>
 
-        <div id="products-list" class="row row-cols-1 row-cols-md-4 g-4">
+        <div id="product-list" class="row row-cols-1 row-cols-md-4 g-4">
             <!-- product cards -->
         </div>
 
@@ -120,7 +120,51 @@
         </div>
     </div>
 
-    <!-- ----------------------- FOOTER ----------------------- --> 
+<!-- ----------------------- CONTENT ----------------------- --> 
+  <div class="container">
+    <div class="card text-center card-mainpage">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="card-footer text-body-secondary">
+        2 days ago
+      </div>
+    </div>
+
+
+    <div class="row link-cards">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card ">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="rating-text">Our Rating</h2>
+    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar" style="width: 90%">4,7</div>
+    </div>
+  </div>
+    
+    <!-- ----------------------- FOOTER ----------------------- -->  
 
     <footer class="footer-bs">
       <div class="row">
@@ -171,6 +215,8 @@
         </footer>
     
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script> 
+    <script src="js/search.js"></script>
+
 </body>
 </html>

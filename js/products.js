@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const products = data.products;
             
             const productList = document.getElementById('product-list');
-            productList.innerHTML = ''; // Очищаем список перед добавлением новых товаров
+            productList.innerHTML = ''; 
             
             products.forEach(product => {
                 const productItem = document.createElement('div');
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <div class="card-body">
                             <h5 class="card-title">${product.title}</h5>
                             <p class="card-text">${product.price}$ | ${product.category}</p>
-                            <a href="product.html?id=${product.id}" class="btn btn-success">Buy</a>
+                            <a href="product.html?id=${product.id}" class="btn btn-success">Info</a>
                             <a href="#" class="btn btn-primary add-to-cart" data-id="${product.id}">Add to Cart</a>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 productList.appendChild(productItem);
             });
 
-            // Добавляем обработчики событий для кнопок "Add to Cart"
+            
             const addToCartButtons = document.querySelectorAll('.add-to-cart');
             addToCartButtons.forEach(button => {
                 button.addEventListener('click', (e) => {

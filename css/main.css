@@ -75,6 +75,39 @@
     background-color: white;
 }
 
+
+.btn-success{
+    background-color: red;  
+    border: 0px solid
+}
+
+.add-to-cart{
+    background-color: black;  
+    border: 0px solid
+}
+
+.card-mainpage{
+    margin-top: 50px;
+}
+
+.link-cards{
+    margin-top: 50px;
+}
+
+.rating-text{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.progress-bar{
+    background-color: red;
+    
+}
+.progress{
+    margin-bottom: 50px;
+}
+
 /* ------------ Footer ------------ */
 
 .footer-bs {
