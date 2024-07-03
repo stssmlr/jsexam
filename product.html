@@ -36,29 +36,29 @@
         </div>
         <!-- ----------------------- HEADER ----------------------- -->
       
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="img/store-logo.png" class="logo-img" alt="Logo" width="150" height="120" class="d-inline-block align-text-top">
-              </a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="img/store-logo.png" class="logo-img" alt="Logo" width="150" height="120" class="d-inline-block align-text-top">
+            </a>
+            
+            <!-- <a class="header-logo-text">MyStore |<br>Buy everything |</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
               
-              <!-- <a class="header-logo-text">MyStore |<br>Buy everything |</a> -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2 searchform" type="search" placeholder="Enter your willing..." aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                <img src="img/phone.png" class="phone-logo" alt="" srcset="">
-                <a href="contact.html" class="help-text">Need some help?<br>Click here!</a>
-                
-                <a href="cart.html" class="cart-button"><img src="img/cart-logo.png" class="cart-logo" alt="" srcset=""></a>
-              </div>
+              <form class="d-flex" role="search" id="searchForm">
+                <input class="form-control me-2 searchform" type="search" placeholder="Enter your willing..." aria-label="Search" id="searchInput">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <img src="img/phone.png" class="phone-logo" alt="" srcset="">
+              <a href="contact.html" class="help-text">Need some help?<br>Click here!</a>
+              
+              <a href="cart.html" class="cart-button"><img src="img/cart-logo.png" class="cart-logo" alt="" srcset=""></a>
             </div>
-          </nav>
+          </div>
+        </nav>
     
 <!-- ----------------------- BANNER ----------------------- -->
 
@@ -115,6 +115,9 @@
         </div>
         </div>
     </footer>
+
+
     <script src="js/product.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>
